@@ -227,6 +227,7 @@ input#slide4:checked ~ .navegacao .botao:nth-of-type(4) {
 }
 
 .campo > p, .cidade > p {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     padding: 10px;
     color: #ffffff;
@@ -242,7 +243,10 @@ input#slide4:checked ~ .navegacao .botao:nth-of-type(4) {
 
 .conteudo-1 > h2 {
     padding: 10px;
-    color: #ffffff;
+    background: linear-gradient(rgb(241, 241, 138), rgb(255, 255, 235));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .imagens-texto {
@@ -269,7 +273,7 @@ input#slide4:checked ~ .navegacao .botao:nth-of-type(4) {
 
 .conteudo-2 > p {
     font-size: 18px;
-    letter-spacing: 1px;
+    text-align:justify;
     color: #ffffff;
     font-family: 'Courier New', Courier, monospace;
 }
