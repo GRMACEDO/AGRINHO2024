@@ -3,3 +3,4 @@ Slider de Imagens: Um slider interativo que apresenta informacoes sobre a relaç
 Efeito Parallax: Banners com efeito parallax para criar uma melhor experiência visual.
 Seções Informativas: Informações sobre características do campo e da cidade.
 Letreiro Animado: Texto animado.
+As imagens utilizadas foram tiradas do jogo minecraft.
