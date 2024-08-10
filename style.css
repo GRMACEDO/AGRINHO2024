@@ -29,8 +29,10 @@ body {
      /*TAMANHOS*/
     ---tamanho-cabecalho: 110px;
     ---tamanho-rodape: 150px;
-    
+    ---tamanho-slide: 750px;
+
     /*CORES*/
+    ---cor-opcoes-menu: #ffff;
     ---cor-textos: #ebebeb;
     ---cor-cabecalho: #0a0a0a98;
     ---cor-rodape: #414141be;
@@ -70,9 +72,8 @@ nav > li {
 
 nav > li > a {
     padding: 8px 15px;
-    color: #ebebeb;
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    color: var(---cor-opcoes-menu);
     text-decoration: none;
     font-size: large;
     position: relative;
@@ -91,7 +92,6 @@ nav > li > a::after {
 
 nav > li > a:hover {
     background-color: rgba(44, 44, 44, 0.39);
-    color: #ffffff;
 }
 
 nav > li > a:hover::after {
@@ -107,7 +107,7 @@ main {
 /*SLIDER*/
 .secao-slide {
     width: 100%;
-    height: 750px; 
+    height: var(---tamanho-slide); 
     overflow: hidden;
     position: relative;
 }
@@ -119,14 +119,6 @@ main {
     overflow: hidden;
 }
 
-@keyframes slideAnimation {
-    0% { transform: translateX(0%); }
-    25% { transform: translateX(-100%); }
-    50% { transform: translateX(-200%); }
-    75% { transform: translateX(-300%); }
-    100% { transform: translateX(0%); }
-}
-
 .imagem {
     width: 100%;
     height: 100%;
@@ -134,7 +126,7 @@ main {
     left: 0;
     opacity: 0;
     position: absolute;
-    transition: opacity 0.5s ease-in-out;
+    transition: 0.6s ease-in-out;
 }
 
 img {
